@@ -1,0 +1,352 @@
+
+.main{
+  overflow: hidden;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: 100%;
+
+}
+.header p {
+  font-size: 22px;
+  font-family: VT323;
+  color: #efe3da;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  animation-duration: 2s;
+  animation-name: line;
+  animation-iteration-count: 1;
+  z-index: 30;
+}
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.banner {
+  width: 2000px;
+  max-width: none;
+  position: absolute;
+  left: -3%;
+}
+.green{
+  bottom: 0%;
+  animation-duration: 5.5s;
+  animation-name: banner-3;
+  animation-iteration-count: 1;
+}
+.pink{
+  top: -1%;
+  z-index: 10;
+  animation-duration: 5s;
+  animation-name: banner-1;
+  animation-iteration-count: 1;
+}
+.orange{
+  animation-duration: 5.3s;
+  animation-name: banner-1;
+  animation-iteration-count: 1;
+  bottom: -9%;
+  z-index: 10;
+}
+@keyframes banner-1 {
+  0% {
+    transform:translateX(-100%) translateY(100%) translateZ(0)
+  }
+  80% {
+    transform:translateX(-100%) translateY(100%) translateZ(0)
+  }
+  90% {
+    transform: translateX(3%) translateY(0%) translateZ(0px);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%) translateZ(0px);
+  }
+}
+
+@keyframes banner-2 {
+  0% {
+    transform:translateX(-100%) translateY(100%) translateZ(0)
+  }
+  80% {
+    transform:translateX(-100%) translateY(100%) translateZ(0)
+  }
+  90% {
+    transform: translateX(3%) translateY(0%) translateZ(0px);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%) translateZ(0px);
+  }
+}
+
+@keyframes banner-3 {
+  0% {
+    transform:translateX(-100%) translateY(-100%) translateZ(0)
+  }
+  80% {
+    transform:translateX(-100%) translateY(-100%) translateZ(0)
+  }
+  90% {
+    transform: translateX(3%) translateY(3%) translateZ(0px);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%) translateZ(0px);
+  }
+}
+
+.hero{
+  width: 100%;
+  height: 800PX;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+}
+.opacity{
+  position: relative;
+  top: -5%;
+  animation-duration: 4s;
+  animation-name: display;
+  animation-iteration-count: 1;
+}
+.hero2{
+  padding-top: 100px;
+  width: 100%;
+  height: 600px;
+}
+@keyframes display {
+  0% {
+   opacity: 0;
+  }
+  50% {
+    opacity: 0;
+   }
+  100% {
+    opacity: 1;
+  }
+}
+.imageContainer{
+  width: 650px;
+  height: 650px;
+  position: relative
+}
+.image {
+  animation-duration: 4s;
+  animation-name: image;
+  animation-iteration-count: 1;
+  transform: scale(0.95);
+  border-radius: 1.5rem;
+}
+@keyframes image {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(0);
+   }
+  90% {
+    transform: scale(1);
+   }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.title {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  color: #efe3da;
+  font-weight: 600;
+  
+}
+.para{
+  max-width: 700px;
+}
+.description{
+  font-size: 22px;
+  font-family: VT323;
+  color: #efe3da;
+
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+.pad{
+  padding-top: 50px;
+}
+.pad2{
+  padding-top: 25px;
+}
+.title2 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  color: #efe3da;
+  font-weight: 600;
+  padding: 0 20px;
+  line-height: 60px;
+}
+.transacButton {
+  background-color: #EFE3DA;
+  border: none;
+  color: #222123;
+  padding: 15px 32px;
+  width: 150PX;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+}
+.transacButtonB{
+  border-radius: 0px 50px 50px 0px;
+  margin: 0;
+  border-left: 2px solid;
+}
+.loadButton{
+  padding: 0px;
+  height: 54px;
+}
+.load{
+  position: relative;
+  bottom: 3px;
+  width: 60px;
+}
+
+
+@media (max-width: 1600px){
+  .imageContainer {
+    width: 550px;
+    height: 550px;
+  }
+  .title {
+    font-size: 70px;
+  }
+  .hero{
+    padding: 0 100px;
+    height: 750PX;
+  }
+
+}
+
+@media (max-width: 1300px){ 
+  .banner {
+    width: 1700px;
+    max-width: none;
+    position: absolute;
+    left: -20%;
+  }
+  .imageContainer {
+    width: 500px;
+    height: 500px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .orange{
+    bottom: -5%;
+  }
+  .hero{
+    height: 650PX;
+  }
+}
+
+@media (max-width: 1100px){ 
+  .imageContainer {
+    width: 400px;
+    height: 400px;
+  }
+  .orange{
+    bottom: 0%;
+  }
+  .hero{
+    width: 100%;
+    height: 650PX;
+    position: relative;
+    padding: 0 25px;
+  }
+  .banner {
+    width: 1700px;
+    max-width: none;
+    position: absolute;
+    left: -20%;
+  }
+}
+
+@media (max-width: 830px){ 
+  .hero{
+    flex-direction: column-reverse;
+    padding: 0;
+    height: 700PX;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .banner {
+    width: 1300px;
+    max-width: none;
+    position: absolute;
+    left: 0%;
+  }
+  .orange{
+    bottom: 30%;
+    left: -27rem;
+  }
+  .green{
+    bottom: 30%;
+    left: -27rem;
+  }
+  .pink{
+    left: -27rem;
+    top: 1rem;
+  }
+  .hero2{
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 550px){ 
+  .imageContainer {
+    width: 330px;
+    height: 330px;
+  }
+  .title {
+    font-size: 60px;
+    top: -3rem;
+    position: relative;
+    line-height: 60px;
+    padding: 0 20px;
+  }
+  .title2 {
+    font-size: 50px;
+    padding: 0 20px;
+  }
+  .hero p{
+    top: -3rem;
+    position: relative;
+  }
+  .pink{
+    left: -27rem;
+    top: -0.5rem;
+  }
+  .input{
+    width: 180px;
+  }
+}
